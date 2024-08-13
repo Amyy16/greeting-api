@@ -7,7 +7,7 @@ const ipstack = process.env.IPSTACK_ACCESS_KEY;
 
 app = express();
 app.use(express.json());
-app.use(requestip.mw());
+// app.use(requestip.mw());
 
 app.get("/api/hello", async (req, res) => {
   try {
