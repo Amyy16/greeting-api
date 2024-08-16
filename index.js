@@ -33,7 +33,7 @@ app.get("/api/hello", async (req, res) => {
     res.status(200).json({
       visitor_name: visitor_name,
       ip: ipAddress,
-      // location: location,
+      location: location,
       // weather: weather,
     });
   } catch (error) {
