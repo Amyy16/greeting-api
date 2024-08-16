@@ -19,10 +19,10 @@ app.get("/api/hello", async (req, res) => {
 
     console.log(ipAddress);
 
-    // const locationresponse = await axios.get(
-    //   `http://api.ipstack.com/${ipAddress}?access_key=${ipstack}`
-    // );
-    // const location = locationresponse.data.city;
+    const locationresponse = await axios.get(
+      `http://api.ipstack.com/${ipAddress}?access_key=${ipstack}`
+    );
+    const location = locationresponse.data.city;
 
     // // fetch weather using location
     // const weatherResponse = await axios.get(
